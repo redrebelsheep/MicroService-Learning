@@ -1,13 +1,13 @@
-package de.bredex.inventory;
+package de.bredex.account;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class AccountApplication {
 
 	public final static void main(final String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(AccountApplication.class, args);
 	}
 
 }
