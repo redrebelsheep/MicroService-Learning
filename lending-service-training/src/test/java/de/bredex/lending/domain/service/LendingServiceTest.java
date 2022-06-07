@@ -13,6 +13,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
+import de.bredex.lending.domain.spi.AccountServiceProvider;
+import de.bredex.lending.domain.spi.InventoryServiceProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,12 +26,14 @@ import de.bredex.lending.domain.spi.LendingRepository;
 public class LendingServiceTest {
 
     private LendingRepository repository = mock(LendingRepository.class);
+	private AccountServiceProvider accountServiceProvider;
+	private InventoryServiceProvider inventoryServiceProvider;
 
     private LendingService service;
 
     @BeforeEach
     public void setUp() {
-	service = new LendingService(repository);
+	service = new LendingService(accountServiceProvider, inventoryServiceProvider, repository);
     }
 
     @Test
