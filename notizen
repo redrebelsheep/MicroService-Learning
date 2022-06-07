@@ -1,0 +1,28 @@
+<dependency>
+ <groupId>org.zalando</groupId>
+ <artifactId>problem</artifactId>
+ <version>${zalando.problem.version}</version>
+</dependency>
+<dependency>
+ <groupId>org.zalando</groupId>
+ <artifactId>problem-spring-web</artifactId>
+ <version>${zalando.problem.web.version}</version>
+</dependency>
+
+
+
+AccountService:
+https://github.com/softwarexpert24/account-service-training
+
+9525d3f635d8c9a30be9c87dfcab79d1ca7107a6
+
+InventoryService:
+https://github.com/softwarexpert24/inventory-service-training
+
+ff3467e54e74fc673b388275f607d1d041fda6c4
+
+
+Lending Service:
+https://github.com/softwarexpert24/lending-service-training
+
+7732fe78e94a6e02937e4ece03a6a795691753ae
