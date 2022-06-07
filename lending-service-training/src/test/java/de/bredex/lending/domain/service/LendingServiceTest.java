@@ -22,11 +22,20 @@ import org.junit.jupiter.api.Test;
 import de.bredex.lending.domain.model.Lending;
 import de.bredex.lending.domain.spi.LendingEntity;
 import de.bredex.lending.domain.spi.LendingRepository;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+@ExtendWith(MockitoExtension.class)
 public class LendingServiceTest {
 
     private LendingRepository repository = mock(LendingRepository.class);
+
+
+	@Mock
 	private AccountServiceProvider accountServiceProvider;
+
+	@Mock
 	private InventoryServiceProvider inventoryServiceProvider;
 
     private LendingService service;
@@ -40,6 +49,9 @@ public class LendingServiceTest {
     public void borrow_creates_new_lending() {
 	when(repository.save(any()))
 		.thenReturn(new LendingEntity("10001", "1-86092-038-1", LocalDate.now().plus(4, ChronoUnit.WEEKS)));
+
+	when(accountServiceProvider.accountExists(any(String.class))).thenReturn(true);
+	when(inventoryServiceProvider.bookExists(any(String.class))).thenReturn(true);
 
 	Lending lending = service.borrow("10001", "1-86092-038-1");
 
