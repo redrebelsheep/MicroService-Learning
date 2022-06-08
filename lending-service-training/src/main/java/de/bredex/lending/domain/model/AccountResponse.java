@@ -2,7 +2,7 @@ package de.bredex.lending.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public final class AccountResponse {
+public class AccountResponse {
 
     private  String number;
     private  String firstName;
