@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  eureka-server:
+    image: eureka-server:0.0.2
+    ports:
+      - "8761:8761"
+    networks:
+      - eureka-network
+    environment:
+      EUREKA_URI: http://eureka-server:8761/eureka
+  account-service: 
+    image: account-server-training:0.0.2
+    networks:
+      - eureka-network
+    environment:
+      EUREKA_URI: http://eureka-server:8761/eureka
+  lending-service: 
+    image: lending-server-training:0.0.2
+    networks:
+      - eureka-network
+    environment:
+      EUREKA_URI: http://eureka-server:8761/eureka
+  iventory-service: 
+    image: inventory-server-training:0.0.2
+    networks:
+      - eureka-network
+    environment:
+      EUREKA_URI: http://eureka-server:8761/eureka
+networks:
+  eureka-network: 
+    name: eureka-network 
+    # Use a custom driver
+ 
