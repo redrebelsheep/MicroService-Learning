@@ -1,0 +1,9 @@
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/domain/spi/AccountRepository.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/application/api/exception/ExceptionHandlerControllerAdvice.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/domain/model/Account.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/domain/spi/AccountEntity.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/application/api/AccountResponse.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/domain/service/AccountService.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/AccountApplication8081.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/application/api/AccountController.java
+/Users/d1ade4u/java-project-term4/mcservice/account-service-training/src/main/java/de/bredex/account/application/api/AccountRequest.java

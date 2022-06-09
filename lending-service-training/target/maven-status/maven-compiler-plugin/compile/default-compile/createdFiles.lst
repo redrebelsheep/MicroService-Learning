@@ -1,0 +1,17 @@
+de/bredex/lending/domain/model/AccountResponse.class
+de/bredex/lending/application/api/LendingRequest.class
+de/bredex/lending/domain/spi/AccountServiceProvider.class
+de/bredex/lending/application/api/config/RestTemplateConfig.class
+de/bredex/lending/infrastructure/account/AccountServiceProviderImpl.class
+de/bredex/lending/application/api/LendingResponse.class
+de/bredex/lending/application/api/LendingController.class
+de/bredex/lending/domain/service/LendingService.class
+de/bredex/lending/domain/spi/LendingEntity.class
+de/bredex/lending/domain/spi/InventoryServiceProvider.class
+de/bredex/lending/domain/spi/LendingRepository.class
+de/bredex/lending/LendingApplication8082.class
+de/bredex/lending/application/api/LendingsResponse$Item.class
+de/bredex/lending/application/api/exception/ExceptionHandlerControllerAdvice.class
+de/bredex/lending/application/api/LendingsResponse.class
+de/bredex/lending/domain/model/Lending.class
+de/bredex/lending/infrastructure/inventory/InventoryServiceProviderImpl.class

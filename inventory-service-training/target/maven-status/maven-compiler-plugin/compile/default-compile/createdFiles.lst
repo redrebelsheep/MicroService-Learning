@@ -1,0 +1,9 @@
+de/bredex/inventory/application/api/BookResponse.class
+de/bredex/inventory/application/api/exception/ExceptionHandlerControllerAdvice.class
+de/bredex/inventory/domain/spi/BookRepository.class
+de/bredex/inventory/domain/service/InventoryService.class
+de/bredex/inventory/domain/service/InventoryService$NoSuchBookException.class
+de/bredex/inventory/InventoryApplication8083.class
+de/bredex/inventory/application/api/InventoryController.class
+de/bredex/inventory/domain/model/Book.class
+de/bredex/inventory/domain/spi/BookEntity.class
