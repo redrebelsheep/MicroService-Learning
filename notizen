@@ -26,3 +26,60 @@ Lending Service:
 https://github.com/softwarexpert24/lending-service-training
 
 7732fe78e94a6e02937e4ece03a6a795691753ae
+
+
+-------------
+
+eureka.client.registryFetchIntervalSeconds
+
+
+
+
+<dependency>
+ <groupId>org.springframework.cloud</groupId>
+ <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+</dependency>
+
+
+<dependencyManagement>
+ <dependencies>
+  <dependency>
+   <groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-dependencies</artifactId>
+   <version>${spring-cloud.version}</version>
+   <type>pom</type>
+   <scope>import</scope>
+  </dependency>
+ </dependencies>
+</dependencyManagement>
+
+
+
+--- netflix-server ---
+
+<groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+   <version>3.1.2</version>
+</dependency>
+
+--- netflix client mit version ----
+<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client --><dependency>
+   <groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+   <version>3.1.2</version>
+</dependency>
+
+
+
+-- application.properties ---
+
+
+server.port=8500
+
+management.endpoint.health.probes.enabled=true
+
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+
+logging.level.com.netflix.eureka=OFF
+logging.level.com.netflix.discovery=OFF
