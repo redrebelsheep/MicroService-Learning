@@ -3,7 +3,6 @@ package de.bredex.lending.infrastructure.account;
 import java.net.URI;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,7 +23,7 @@ import de.bredex.lending.domain.spi.AccountServiceProvider;
 public class AccountServiceProviderImpl implements AccountServiceProvider {
 
     @Value("/api/v1/account")
-    private String apiAdress;
+    private String apiAddress;
 
     private Set<String> accountNumberSet = new HashSet<>();
     private ObjectMapper objectMapper = new ObjectMapper();
@@ -79,7 +78,7 @@ public class AccountServiceProviderImpl implements AccountServiceProvider {
     private ResponseEntity<String> getStringResponseEntity() {
         final URI accountService = discoveryClient.getInstances("account-service").get(0).getUri();
         final ResponseEntity<String> response = restTemplate
-                .getForEntity(accountService + apiAdress, String.class);
+                .getForEntity(accountService + apiAddress, String.class);
         return response;
     }
 }
