@@ -1,4 +1,4 @@
-package de.bredex.lending.domain.model;
+package de.bredex.lending.infrastructure.account;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
